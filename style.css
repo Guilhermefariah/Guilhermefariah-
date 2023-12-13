@@ -4,14 +4,27 @@ body{
     color: white;
     
 }
-.github-link {
-    color: #fff;
+#social img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 100%);
+    box-sizing: border-box;
+    transform: translate(-10%, 20%);
 }
-.contact-link {
-    color: #fff;
+#social img:hover {
+    border: 3px solid rgba(166, 218, 250);
+    transform: translate(-10px, 6px);
+    box-shadow: 5px 5px 10px rgb(166, 218, 250);
+    transition: transform .3s, border 0.1s;
 }
-.linkedin-link {
-    color: #fff;
+#social img:active{
+    transform: scale(95%);
+}
+#saturn img{
+    width: 300px;
+    height: 180px;
+    transform: translate(-10%, 30%);
 }
 header{
     height: 50px;
@@ -48,9 +61,10 @@ nav ul:hover {
     height: 100vh;
     overflow: hidden; 
     position: relative;
-    background-color: #000;
-    background-image: radial-gradient(#fff3, transparent 50%);
+    background-image: radial-gradient(#fff3, transparent 70%);
     margin-top: -50px;
+    background: url(img/background.jpg);
+    background-size: cover;
 }
 .slider .list{
     position: absolute;
@@ -84,6 +98,7 @@ nav ul:hover {
     color: #eee;
     width: max-content;
 }
+
 .slider .content div:nth-child(2){
     font-size: 3rem;
     text-transform: uppercase;
@@ -111,13 +126,23 @@ nav ul:hover {
     background: transparent;
     color: #fff;
     font-family: 'Poppins';
+    box-shadow: 2px 2px 5px hsl(0, 0%, 100%);
     letter-spacing: 5px;
     border-radius: 20px;
     padding: 8px 15px;
     font-size: medium;
+    border: 1px solid rgba(166, 218, 250);
+    
 }
-.content button:hover {
-    border-color: #fff;
+.content a :hover {
+    border: 3px solid rgb(166, 218, 250);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgb(166, 218, 250);
+    transition: transform .3s, border 0.1s;
+    
+}
+.content a:active {
+    transform: scale(95%);
 }
 #prev,
 #next{
@@ -129,8 +154,9 @@ nav ul:hover {
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid #eee9;
-    background-color: #eee5;
-    color: #eee;
+    background-color: rgba(238, 238, 238, 0.333);
+    box-shadow: 2px 2px 5px hsl(0, 0%, 100%);
+    color: rgb(166, 218, 250);
     font-size: x-large;
     font-family: monospace;
     cursor: pointer;
@@ -142,7 +168,12 @@ nav ul:hover {
 #next{
     right: 20px;
 }
-
+#prev, #next:hover{
+    border: 3px solid rgb(166, 218, 250);
+    transform: translate(-1px, 2px);
+    box-shadow: 5px 5px 10px rgb(166, 218, 250);
+    transition: transform .3s, border 0.1s;
+}
 /* //circle */
 
 .circle{
