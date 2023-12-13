@@ -49,9 +49,7 @@ header nav ul{
     padding: 8px 12px; 
     border-radius: 5px;
 }
-nav ul:hover {
-    border-color: #fff; 
-    }
+
 :root{
     --width-circle: 150vw;
     --radius: calc(100vw / 6);
@@ -133,6 +131,16 @@ nav ul:hover {
     font-size: medium;
     border: 1px solid rgba(166, 218, 250);
     
+}
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+.iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 100 auto;
 }
 .content a :hover {
     border: 3px solid rgb(166, 218, 250);
