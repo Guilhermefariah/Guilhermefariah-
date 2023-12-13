@@ -5,7 +5,7 @@ body{
     
 }
 #social img {
-    width: 50px;
+    width: 40px;
     margin: 10px;
     border-radius: 50%;
     box-shadow: 2px 2px 5px hsl(0, 0%, 100%);
@@ -14,16 +14,16 @@ body{
 }
 #social img:hover {
     border: 3px solid rgba(166, 218, 250);
-    transform: translate(-10px, 6px);
+    transform: translate(-10px, 10px);
     box-shadow: 5px 5px 10px rgb(166, 218, 250);
-    transition: transform .3s, border 0.1s;
+    transition: transform .3s, border 1s;
 }
 #social img:active{
     transform: scale(95%);
 }
 #saturn img{
-    width: 300px;
-    height: 180px;
+    width: 100px;
+    height: 50px;
     transform: translate(-10%, 30%);
 }
 header{
@@ -132,16 +132,7 @@ header nav ul{
     border: 1px solid rgba(166, 218, 250);
     
 }
-::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-}
-.iframe {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 100 auto;
-}
+
 .content a :hover {
     border: 3px solid rgb(166, 218, 250);
     transform: translate(-3px, -3px);
@@ -178,9 +169,9 @@ header nav ul{
 }
 #prev, #next:hover{
     border: 3px solid rgb(166, 218, 250);
-    transform: translate(-1px, 2px);
+    transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgb(166, 218, 250);
-    transition: transform .3s, border 0.1s;
+    transition: transform .5s, border 1s;
 }
 /* //circle */
 
