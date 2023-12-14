@@ -61,7 +61,7 @@ header nav ul{
     position: relative;
     background-image: radial-gradient(#fff3, transparent 70%);
     margin-top: -50px;
-    background: url(img/background.jpg);
+    background: black;
     background-size: cover;
 }
 .slider .list{
@@ -108,8 +108,8 @@ header nav ul{
     position: absolute;
     left: 60%;
     bottom: 50%;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     content: '';
     background-image: url(img/leaves.png);
     background-size: cover;
