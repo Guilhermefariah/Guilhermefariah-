@@ -13,10 +13,10 @@ body{
     transform: translate(-10%, 20%);
 }
 #social img:hover {
-    border: 3px solid rgba(166, 218, 250);
+    border: 2px solid rgba(135, 206, 250, 0.719);
     transform: translate(-10px, 10px);
-    box-shadow: 5px 5px 10px rgb(166, 218, 250);
-    transition: transform .3s, border 1s;
+    box-shadow: 5px 5px 10px rgba(135, 206, 250, 0.719);
+    transition: transform 0.1s, border 0.1s;
 }
 #social img:active{
     transform: scale(95%);
