@@ -22,8 +22,8 @@ body{
     transform: scale(95%);
 }
 #saturn img{
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 100px;
     transform: translate(-10%, 30%);
 }
 header{
@@ -129,15 +129,15 @@ header nav ul{
     border-radius: 20px;
     padding: 8px 15px;
     font-size: medium;
-    border: 1px solid rgba(166, 218, 250);
+    border: 1px solid rgba(135, 206, 250, 0.719);
     
 }
 
 .content a :hover {
-    border: 3px solid rgb(166, 218, 250);
+    border: 2px solid rgba(135, 206, 250, 0.719);
     transform: translate(-3px, -3px);
-    box-shadow: 5px 5px 10px rgb(166, 218, 250);
-    transition: transform .3s, border 0.1s;
+    box-shadow: 5px 5px 10px rgba(135, 206, 250, 0.719);
+    transition: transform 0.1s, border 0.1s;
     
 }
 .content a:active {
@@ -168,10 +168,10 @@ header nav ul{
     right: 20px;
 }
 #prev, #next:hover{
-    border: 3px solid rgb(166, 218, 250);
+    border: 2px solid rgba(135, 206, 250, 0.719);
     transform: translate(-3px, -3px);
-    box-shadow: 5px 5px 10px rgb(166, 218, 250);
-    transition: transform .5s, border 1s;
+    box-shadow: 5px 5px 10px rgba(135, 206, 250, 0.719);
+    transition: transform 0.1s, border 0.1s;
 }
 /* //circle */
 
