@@ -1,7 +1,10 @@
+@charset "UTF-8";
 body{
     margin: 0;
     font-family: Poppins, sans-serif;
     color: white;
+    padding: 0;
+    
     
 }
 #social img {
@@ -14,9 +17,9 @@ body{
 }
 #social img:hover {
     border: 2px solid rgba(135, 206, 250, 0.719);
-    transform: translate(-10px, 10px);
     box-shadow: 5px 5px 10px rgba(135, 206, 250, 0.719);
     transition: transform 0.1s, border 0.1s;
+    transform: translate(-10px, 10px);
 }
 #social img:active{
     transform: scale(95%);
@@ -61,8 +64,9 @@ header nav ul{
     position: relative;
     background-image: radial-gradient(#fff3, transparent 70%);
     margin-top: -50px;
-    background: black;
+    background: linear-gradient(rgb(248, 248, 118),#87cefa);
     background-size: cover;
+
 }
 .slider .list{
     position: absolute;
@@ -77,8 +81,8 @@ header nav ul{
 .slider .list .item{
     width: calc(var(--radius) * 2);
     text-align: center;
-    transform: rotate(45deg);
     transition: transform 1s;
+    transform: rotate(45deg);
 }
 .slider .list .item.active{
     transform: rotate(0deg);
@@ -91,10 +95,10 @@ header nav ul{
     position: absolute;
     bottom: 5%;
     left: 50%;
-    transform: translateX(-50%);
     text-align: center;
     color: #eee;
     width: max-content;
+    transform: translateX(-50%);
 }
 
 .slider .content div:nth-child(2){
@@ -129,12 +133,13 @@ header nav ul{
     border-radius: 20px;
     padding: 8px 15px;
     font-size: medium;
-    border: 1px solid rgba(135, 206, 250, 0.719);
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
     
 }
 
 .content a :hover {
-    border: 2px solid rgba(135, 206, 250, 0.719);
+    border: 2px solid rgb(255, 255, 255);
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(135, 206, 250, 0.719);
     transition: transform 0.1s, border 0.1s;
@@ -147,7 +152,6 @@ header nav ul{
 #next{
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -160,6 +164,7 @@ header nav ul{
     font-family: monospace;
     cursor: pointer;
     z-index: 15;
+    transform: translateY(-50%);
 }
 #prev{
     left: 20px;
@@ -169,9 +174,9 @@ header nav ul{
 }
 #prev, #next:hover{
     border: 2px solid rgba(135, 206, 250, 0.719);
-    transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(135, 206, 250, 0.719);
     transition: transform 0.1s, border 0.1s;
+    transform: translate(-3px, -3px);
 }
 /* //circle */
 
@@ -197,11 +202,11 @@ header nav ul{
     top: 50%;
     left: 50%;
     --rotate: 50deg;
-    transform: translate(-50%, -50%) rotate(var(--rotate));
     text-transform: uppercase;
     color: #fff;
     font-size: small;
     animation: circleRotate 20s linear infinite;
+    transform: translate(-50%, -50%) rotate(var(--rotate));
 }
 @keyframes circleRotate{
     to{
