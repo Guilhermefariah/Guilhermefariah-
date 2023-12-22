@@ -1,9 +1,8 @@
 let circle = document.querySelector('.circle');
-let slider = document.querySelector('.slider');
 let list = document.querySelector('.list');
 let prev = document.getElementById('prev');
 let next = document.getElementById('next');
-let items = document.querySelectorAll('.list .item');
+let items = document.querySelectorAll('.item');
 let count = items.length;
 let active = 0;
 let leftTransform = 0;
@@ -22,7 +21,7 @@ function runCarousel() {
     next.style.display = (active == count - 1) ? 'none' : 'block'
 
 
-    let old_active = document.querySelector('.item.active')
+    let old_active = document.querySelector('.item')
     if(old_active) old_active.classList.remove('active')
     items[active].classList.add('active')
 
@@ -30,7 +29,6 @@ function runCarousel() {
     list.style.transform = `translateX(${leftTransform}px)`
 }
 runCarousel()
-
 
 let textCircle = circle.innerText.split('')
 circle.innerText = '';

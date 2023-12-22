@@ -4,11 +4,9 @@ body{
     font-family: Poppins, sans-serif;
     color: white;
     padding: 0;
-    
-    
 }
 #social img {
-    width: 30px;
+    width: 35px;
     margin: 10px;
     border-radius: 50%;
     box-shadow: 2px 2px 5px hsl(0, 0%, 100%);
@@ -97,6 +95,7 @@ header nav ul{
     left: 50%;
     text-align: center;
     color: #eee;
+    text-shadow: 1px 1px 4px white;
     width: max-content;
     transform: translateX(-50%);
 }
@@ -129,6 +128,7 @@ header nav ul{
     color: #fff;
     font-family: 'Poppins';
     box-shadow: 2px 2px 5px hsl(0, 0%, 100%);
+    text-shadow: 1px 1px 4px white;
     letter-spacing: 5px;
     border-radius: 20px;
     padding: 8px 15px;
