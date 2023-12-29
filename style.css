@@ -6,8 +6,8 @@ body{
     padding: 0;
 }
 #social img {
-    width: 35px;
-    margin: 10px;
+    width: 40px;
+    margin: 20px;
     border-radius: 50%;
     box-shadow: 2px 2px 5px hsl(0, 0%, 100%);
     box-sizing: border-box;
@@ -23,8 +23,8 @@ body{
     transform: scale(95%);
 }
 #saturn img{
-    width: 100px;
-    height: 50px;
+    width: 140px;
+    height: 80px;
     transform: translate(-10%, 30%);
 }
 header{
@@ -69,7 +69,7 @@ header nav ul{
     margin-top: -50px;
     background-size: cover;
     background-image: conic-gradient(
-        from var(--rotate) at 6% 5%,
+        from var(--rotate) at 15% 5%,
         #001012 40%,
         #f4f7fc55,
         #0b1012 60%
@@ -111,12 +111,13 @@ header nav ul{
 .slider .content{
     position: absolute;
     bottom: 5%;
-    left: 50%;
+    left: 40%;
     text-align: center;
     color: #eee;
     text-shadow: 1px 1px 4px white;
     width: max-content;
     transform: translateX(-50%);
+    margin: 50px;
 }
 
 .slider .content div:nth-child(2){
