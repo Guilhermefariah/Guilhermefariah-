@@ -55,6 +55,11 @@ header nav ul{
     --width-circle: 150vw;
     --radius: calc(100vw / 6);
 }
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
 .slider{
     width: 100vw;
     height: 100vh;
@@ -62,8 +67,22 @@ header nav ul{
     position: relative;
     background-image: radial-gradient(#fff3, transparent 70%);
     margin-top: -50px;
-    background: linear-gradient(rgb(248, 248, 118),#87cefa);
     background-size: cover;
+    background-image: conic-gradient(
+        from var(--rotate) at 6% 5%,
+        #001012 40%,
+        #f4f7fc55,
+        #0b1012 60%
+    );
+    color: transparent;
+    animation: rotateLight 3s ease-in-out infinite alternate;
+}
+@keyframes rotateLight{
+    from{
+        --rotate: 0.15turn
+    }to{
+        --rotate: -0.15turn;
+    }
 
 }
 .slider .list{
