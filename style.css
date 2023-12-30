@@ -1,9 +1,9 @@
 @charset "UTF-8";
 body{
+    padding: 0;
     margin: 0;
     font-family: Poppins, sans-serif;
     color: white;
-    padding: 0;
 }
 #social img {
     width: 35px;
@@ -50,7 +50,6 @@ header nav ul{
     padding: 8px 12px; 
     border-radius: 5px;
 }
-
 :root{
     --width-circle: 150vw;
     --radius: calc(100vw / 6);
@@ -70,7 +69,7 @@ header nav ul{
     background-size: cover;
     background-image: conic-gradient(
         from var(--rotate) at 9% 5%,
-        #001012 40%,
+        #001012 25%,
         #f4f7fc55,
         #0b1012 60%
     );
@@ -92,8 +91,7 @@ header nav ul{
     display: flex;
     justify-content: start;
     align-items: center;
-    transition: transform 0.8s;
-    
+    transition: transform 0.8s; 
 }
 .slider .list .item{
     width: calc(var(--radius) * 2);
@@ -110,6 +108,7 @@ header nav ul{
 }
 .slider .content{
     position: absolute;
+    margin: 0;
     bottom: 5%;
     left: 50%;
     text-align: center;
@@ -117,7 +116,6 @@ header nav ul{
     text-shadow: 1px 1px 4px white;
     width: max-content;
     transform: translateX(-50%);
-    margin: 0px 0px 20px 0px;
 }
 
 .slider .content div:nth-child(2){
@@ -140,8 +138,9 @@ header nav ul{
 }
 .slider .content div:nth-child(1){
     text-align: left;
+    text-shadow: 2px 2px 10px  rgb(255, 255, 255);
     text-transform: uppercase;
-    transform: translateY(10px);
+    transform: translate(5px, 5px);
 }
 .slider .content button{ 
     background: transparent;
@@ -154,16 +153,13 @@ header nav ul{
     padding: 8px 15px;
     font-size: medium;
     border: 1px solid rgb(255, 255, 255);
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
-
 .content a :hover {
     border: 2px solid rgb(255, 255, 255);
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(135, 206, 250, 0.719);
     transition: transform 0.1s, border 0.1s;
-    
 }
 .content a:active {
     transform: scale(95%);

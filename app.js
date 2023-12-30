@@ -1,5 +1,4 @@
 let circle = document.querySelector('.circle');
-
 let list = document.querySelector('.list');
 let prev = document.getElementById('prev');
 let next = document.getElementById('next');
@@ -20,7 +19,6 @@ prev.onclick = () => {
 function runCarousel() {
     prev.style.display = (active == 0) ? 'none' : 'block';
     next.style.display = (active == count - 1) ? 'none' : 'block';
-
 
     let old_active = document.querySelector('.item.active')
     if(old_active) old_active.classList.remove('active');
