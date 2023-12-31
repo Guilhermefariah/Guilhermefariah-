@@ -17,6 +17,6 @@
         margin: 62vh 75vw;
     }
     .box:hover .bird {
-        transform: translateX(-42vh)translateY(-78vw);
+        transform: translateX(-46vh)translateY(-90vw);
     }
 }
