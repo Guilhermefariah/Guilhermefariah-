@@ -67,9 +67,9 @@ header nav ul{
     background-size: cover;
     background-image: conic-gradient(
         from var(--rotate) at 9% 5%,
-        #001530 25%,
-        #f4f7fc55,
-        #001530 60%
+        #87cefa 25%,
+        #ffffff55,
+        #87cefa 60%
     );
     color: transparent;
     animation: rotateLight 3s ease-in-out infinite alternate;
