@@ -1,4 +1,13 @@
 @media screen and (max-width: 600px){
+    #social img {
+        width: 40px;
+        margin: 30px 10px 10px 10px;
+    }
+    #saturn img{
+        width: 80px;
+        height: 80px;
+        
+    }
     .slider .content {
         bottom: 15%;
     }
@@ -8,6 +17,6 @@
         margin: 62vh 75vw;
     }
     .box:hover .bird {
-        transform: translateX(-40vh)translateY(-90vw);
+        transform: translateX(-40vh)translateY(-80vw);
     }
 }
