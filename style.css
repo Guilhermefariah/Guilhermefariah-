@@ -22,8 +22,8 @@ body{
     transform: scale(95%);
 }
 #saturn img{
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
     transform: translate(-10%, 30%);
 }
 header{
@@ -67,9 +67,9 @@ header nav ul{
     background-size: cover;
     background-image: conic-gradient(
         from var(--rotate) at 9% 5%,
-        #011f0d 40%,
+        #001012 40%,
         #ffffff55,
-        #011f0d 60%
+        #001012 60%
     );
     color: transparent;
     animation: rotateLight 3s ease-in-out infinite alternate;
@@ -168,7 +168,7 @@ header nav ul{
 }
 .box:hover .bird{
     animation-play-state: running!important;
-    transform: translateX(-68vw)translateY(-43vh);
+    transform: translateX(-70vw)translateY(-45vh);
 }
 @keyframes gifAnimation {
     from{
