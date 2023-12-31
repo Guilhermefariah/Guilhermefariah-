@@ -24,7 +24,7 @@ body{
 }
 #saturn img{
     width: 140px;
-    height: 80px;
+    height: 140px;
     transform: translate(-10%, 30%);
 }
 header{
@@ -64,14 +64,13 @@ header nav ul{
     height: 100vh;
     overflow: hidden; 
     position: relative;
-    background-image: radial-gradient(#fff3, transparent 70%);
     margin-top: -50px;
     background-size: cover;
     background-image: conic-gradient(
         from var(--rotate) at 9% 5%,
-        #001012 25%,
+        #001530 25%,
         #f4f7fc55,
-        #0b1012 60%
+        #001530 60%
     );
     color: transparent;
     animation: rotateLight 3s ease-in-out infinite alternate;
@@ -116,7 +115,6 @@ header nav ul{
     width: max-content;
     transform: translateX(-50%);
 }
-
 .slider .content div:nth-child(2){
     font-size: 3rem;
     text-transform: uppercase;
@@ -128,12 +126,58 @@ header nav ul{
     position: absolute;
     left: 60%;
     bottom: 50%;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     content: '';
     background-image: url(img/leaves.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+.box{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 75vh 75vw;
+    cursor: pointer; 
+}
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.171);
+    background-size: cover;
+    border-radius: 50px;
+    transition: 1s;
+}
+.box:hover .bg{
+    transform: 
+        perspective(20px)
+        rotatex(2deg)
+        translateY(-50px);
+}
+.bird{
+    pointer-events: none;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-size: 100%;
+    animation: gifAnimation 0.3s linear infinite;
+    background-repeat: no-repeat;
+    bottom: 0;
+    transition: 1s;
+    animation-play-state: paused!important;
+}
+.box:hover .bird{
+    animation-play-state: running!important;
+    transform: translateX(-68vw)translateY(-43vh);
+}
+@keyframes gifAnimation {
+    from{
+        background-image: url(img/5.png);  
+    }to{
+        background-image: url(img/6.png);
+    }
+    
 }
 .slider .content div:nth-child(1){
     text-align: left;
@@ -208,7 +252,6 @@ header nav ul{
     background: radial-gradient( 
         calc(var(--radius) + 1px), #eee5 100%, #eee2
     );
-    
 }
 .circle span{
     display: block;
