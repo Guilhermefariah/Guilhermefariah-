@@ -8,6 +8,7 @@ let active = 0;
 let leftTransform = 0;
 let width_item = items[active].offsetWidth;
 
+
 next.onclick = () => {
     active = active >= count - 1 ? count - 1 : active + 1
     runCarousel();

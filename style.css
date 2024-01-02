@@ -4,6 +4,9 @@ body{
     font-family: Poppins, sans-serif;
     color: white;
 }
+audio{
+    display: none;
+}
 #social img {
     width: 35px;
     margin: 10px;
@@ -13,8 +16,8 @@ body{
     transform: translate(-10%, 20%);
 }
 #social img:hover {
-    border: 2px solid rgba(135, 206, 250, 0.719);
-    box-shadow: 5px 5px 10px rgba(135, 206, 250, 0.719);
+    border: 2px solid rgba(255, 255, 255, 0.719);
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.719);
     transition: transform 0.1s, border 0.1s;
     transform: translate(-10px, 10px);
 }
@@ -67,9 +70,9 @@ header nav ul{
     background-size: cover;
     background-image: conic-gradient(
         from var(--rotate) at 7% 5%,
-        #001012 40%,
+        #87cefa 40%,
         #ffffff55,
-        #001012 60%
+        #87cefa 60%
     );
     color: transparent;
     animation: rotateLight 3s ease-in-out infinite alternate;
@@ -200,7 +203,7 @@ header nav ul{
 .content a :hover {
     border: 2px solid rgb(255, 255, 255);
     transform: translate(-3px, -3px);
-    box-shadow: 5px 5px 10px rgba(135, 206, 250, 0.719);
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.719);
     transition: transform 0.1s, border 0.1s;
 }
 .content a:active {
@@ -217,7 +220,7 @@ header nav ul{
     border: 1px solid #eee9;
     background-color: rgba(238, 238, 238, 0.333);
     box-shadow: 2px 2px 5px hsl(0, 0%, 100%);
-    color: rgb(166, 218, 250);
+    color: rgb(255, 255, 255);
     font-size: x-large;
     font-family: monospace;
     cursor: pointer;
@@ -231,8 +234,8 @@ header nav ul{
     right: 20px;
 }
 #prev, #next:hover{
-    border: 2px solid rgba(135, 206, 250, 0.719);
-    box-shadow: 5px 5px 10px rgba(135, 206, 250, 0.719);
+    border: 2px solid rgba(255, 255, 255, 0.719);
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.719);
     transition: transform 0.1s, border 0.1s;
     transform: translate(-3px, -3px);
 }
