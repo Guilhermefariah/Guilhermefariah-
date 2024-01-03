@@ -1,8 +1,8 @@
 body{
     padding: 0;
     margin: 0;
-    font-family: Poppins, sans-serif;
-    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eff6e0;
 }
 audio{
     display: none;
@@ -11,13 +11,13 @@ audio{
     width: 35px;
     margin: 10px;
     border-radius: 50%;
-    box-shadow: 2px 2px 5px hsl(0, 0%, 100%);
+    box-shadow: 2px 2px 5px #eff6e0;
     box-sizing: border-box;
     transform: translate(-10%, 20%);
 }
 #social img:hover {
-    border: 2px solid rgba(255, 255, 255, 0.719);
-    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.719);
+    border: 2px solid #eff6e0;
+    box-shadow: 5px 5px 10px #eff6e0;
     transition: transform 0.1s, border 0.1s;
     transform: translate(-10px, 10px);
 }
@@ -46,7 +46,7 @@ header nav ul{
     display: flex;
     gap: 30px;
     text-decoration: none;
-    color: white;
+    color: #eff6e0;
     font-weight: bold;
     border: 1px solid transparent;
     padding: 8px 12px; 
@@ -70,9 +70,9 @@ header nav ul{
     background-size: cover;
     background-image: conic-gradient(
         from var(--rotate) at 7% 5%,
-        #87cefa 40%,
-        #ffffff55,
-        #87cefa 60%
+        #001012 40%,
+        #eff6e0,
+        #001012 60%
     );
     color: transparent;
     animation: rotateLight 3s ease-in-out infinite alternate;
@@ -112,18 +112,35 @@ header nav ul{
     bottom: 5%;
     left: 50%;
     text-align: center;
-    color: #eee;
-    text-shadow: 1px 1px 4px white;
     width: max-content;
     transform: translateX(-50%);
 }
 .slider .content div:nth-child(2){
-    font-size: 3rem;
+    background-clip: text;
+    -webkit-background-clip: text;
     text-transform: uppercase;
-    letter-spacing: 10px;
-    font-weight: bold;
+    animation: sliderLight 5s ease-in-out infinite alternate;
+    letter-spacing: 20px;
+    font-size: 3rem;
+    font-weight: bolder;
     position: relative;
+    border-radius: 5px;
+    text-shadow: 1px 1px 10px #eff6e0;
+    background-image: conic-gradient(
+        from var(--rotate) at 50% -100%,
+        #eff6e0 40%,
+        #f5d547,
+        #eff6e0 60%
+    );
 }
+@keyframes sliderLight{
+    from{
+        --rotate: 5turn
+    }to{
+        --rotate: -5turn;
+    }
+}
+
 .slider .content div:nth-child(2)::before{
     position: absolute;
     left: 60%;
@@ -146,7 +163,7 @@ header nav ul{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(255, 0, 0, 0.171);
+    background-color: rgba(255, 0, 0, 0.171);
     background-size: cover;
     border-radius: 50px;
     transition: 1s;
@@ -183,27 +200,29 @@ header nav ul{
 }
 .slider .content div:nth-child(1){
     text-align: left;
-    text-shadow: 2px 2px 10px  rgb(255, 255, 255);
+    color: #eff6e0;
+    text-shadow: 2px 2px 10px  #eff6e0;
     text-transform: uppercase;
     transform: translate(5px, 5px);
+    
 }
 .slider .content button{ 
     background: transparent;
-    color: #fff;
+    color: #eff6e0;
     font-family: 'Poppins';
-    box-shadow: 2px 2px 5px hsl(0, 0%, 100%);
-    text-shadow: 1px 1px 4px white;
+    box-shadow: 2px 2px 5px #eff6e0;
+    text-shadow: 1px 1px 4px #eff6e0;
     letter-spacing: 5px;
     border-radius: 20px;
     padding: 8px 15px;
     font-size: medium;
-    border: 1px solid rgb(255, 255, 255);
+    border: 2px solid #eff6e0;
     cursor: pointer; 
 }
 .content a :hover {
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid #eff6e0;
     transform: translate(-3px, -3px);
-    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.719);
+    box-shadow: 5px 5px 10px #eff6e0;
     transition: transform 0.1s, border 0.1s;
 }
 .content a:active {
@@ -217,10 +236,10 @@ header nav ul{
     height: 50px;
     border-radius: 50%;
     background-color: transparent;
-    border: 1px solid #eee9;
+    border: 2px solid #eff6e0;
     background-color: rgba(238, 238, 238, 0.333);
-    box-shadow: 2px 2px 5px hsl(0, 0%, 100%);
-    color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 10px #eff6e0;
+    color: #eff6e0;
     font-size: x-large;
     font-family: monospace;
     cursor: pointer;
@@ -234,8 +253,8 @@ header nav ul{
     right: 20px;
 }
 #prev, #next:hover{
-    border: 2px solid rgba(255, 255, 255, 0.719);
-    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.719);
+    border: 2px solid #eff6e0;
+    box-shadow: 5px 5px 10px #eff6e08a;
     transition: transform 0.1s, border 0.1s;
     transform: translate(-3px, -3px);
 }
@@ -252,7 +271,7 @@ header nav ul{
     mask: radial-gradient(var(--radius), #0000 98%, #000);
     backdrop-filter: blur(10px);
     background: radial-gradient( 
-        calc(var(--radius) + 1px), #eee5 100%, #eee2
+        calc(var(--radius) + 1px), #eff6e0 100%, #eee2
     );
 }
 .circle span{
@@ -263,7 +282,7 @@ header nav ul{
     left: 50%;
     --rotate: 50deg;
     text-transform: uppercase;
-    color: #fff;
+    color: #eff6e0;
     font-size: small;
     animation: circleRotate 20s linear infinite;
     transform: translate(-50%, -50%) rotate(var(--rotate));
