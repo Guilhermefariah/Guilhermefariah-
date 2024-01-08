@@ -161,8 +161,8 @@ nav img:active{
 .box:hover .bg{
     transform: 
         perspective(20px)
-        rotatex(5deg)
-        translateY(-50px);
+        rotatex(0deg)
+        translateY(-20px);
 }
 .bird{
     pointer-events: none;
@@ -178,7 +178,7 @@ nav img:active{
 }
 .box:hover .bird{
     animation-play-state: running!important;
-    transform: translateX(-80vw)translateY(-48vh);
+    transform: translateX(-78vw)translateY(-44vh);
     transition: 1s;
 }
 @keyframes gifAnimation {
