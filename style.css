@@ -178,7 +178,7 @@ nav img:active{
 }
 .box:hover .bird{
     animation-play-state: running!important;
-    transform: translateX(-76vw)translateY(-42vh);
+    transform: translateX(-80vw)translateY(-48vh);
     transition: 1s;
 }
 @keyframes gifAnimation {
@@ -255,6 +255,7 @@ nav img:active{
 .circle{
     pointer-events: none;
     position: absolute;
+    margin-bottom: 20vh;
     top: 0%;
     left: 0%;
     width: 100%;
