@@ -15,36 +15,35 @@ audio{
     display: none;
 }
 header{
-    height: 50px;
+    position: relative;
+    height: 8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 20px;
     box-sizing: border-box;
-    position: relative;
     z-index: 10;
 }
-nav img {
-    width: 40px;
-    margin: 10px;
+nav img { 
+    width: 35px;
     border-radius: 50%;
     box-shadow: 1px 1px 4px var(--colorOne);
     box-sizing: border-box;
-    transform: translate(-10%, 20%);
+    margin-right: 2vw;
+    margin-top: 2vh;
 }
 nav img:hover {
     border: 1px solid var(--colorOne);
     box-shadow: 1px 1px 4px var(--colorOne);
-    transition: transform 0.1s, border 0.1s;
-    transform: translate(-10px, 10px);
+    transition: transform 0.5s, border 0.5s;
+    transform: translate(-5px, 5px);
 }
 nav img:active{
     transform: scale(95%);
 }
 #saturn img{
-    width: 100px;
-    height: 100px;
-    transform: translate(-10%, 30%);
+    width: 70px;
+    height: 70px;
+    transform: translate(3vw, 3vh);
 }
 @property --rotate {
     syntax: "<angle>";
@@ -60,9 +59,9 @@ nav img:active{
     background-size: cover;
     background-image: conic-gradient(
         from var(--rotate) at 7% 5%,
-        #001012 40%,
-        #eff6e0,
-        #001012 60%
+        var(--colorTwo) 40%,
+        var(--colorOne),
+        var(--colorTwo) 60%
     );
     color: transparent;
     animation: rotateLight 3s ease-in-out infinite alternate;
@@ -94,12 +93,12 @@ nav img:active{
 }
 .slider .list .item img{
     width: 80%;
-    filter: drop-shadow(0 0 20px #000000);
+    filter: drop-shadow(0 0 20px var(--colorTwo));
 }
 .slider .content{
     position: absolute;
-    margin: 0;
-    bottom: 5%;
+    margin: auto;
+    bottom: 1.5vh;
     left: 50%;
     text-align: center;
     width: max-content;
@@ -110,17 +109,17 @@ nav img:active{
     -webkit-background-clip: text;
     text-transform: uppercase;
     animation: sliderLight 5s ease-in-out infinite alternate;
-    letter-spacing: 20px;
+    letter-spacing: 2vw;
     font-size: 3rem;
     font-weight: bolder;
     position: relative;
     border-radius: 5px;
-    text-shadow: 1px 1px 10px #eff6e0;
+    text-shadow: 1px 1px 10px var(--colorOne);
     background-image: conic-gradient(
         from var(--rotate) at 50% -100%,
-        #eff6e0 40%,
-        #f5d547,
-        #eff6e0 60%
+        var(--colorOne) 40%,
+        var(--colorTwo),
+        var(--colorOne) 60%
     );
 }
 @keyframes sliderLight{
@@ -133,27 +132,28 @@ nav img:active{
 
 .slider .content div:nth-child(2)::before{
     position: absolute;
-    left: 60%;
-    bottom: 50%;
-    width: 80px;
-    height: 80px;
+    right: 10vw;
+    bottom: 5vh;
+    width: 60px;
+    height: 60px;
     content: '';
     background-image: url(img/leaves.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .box{
-    position: relative;
+    position: fixed;
     width: 30px;
     height: 30px;
-    margin: 75vh 75vw;
+    right: 15vw;
+    bottom: 25vh;
     cursor: pointer; 
 }
 .bg{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 0, 0, 0.171);
+    background-image: linear-gradient(var(--colorOne), var(--colorTwo));
     background-size: cover;
     border-radius: 50px;
     transition: 1s;
@@ -161,7 +161,7 @@ nav img:active{
 .box:hover .bg{
     transform: 
         perspective(20px)
-        rotatex(2deg)
+        rotatex(5deg)
         translateY(-50px);
 }
 .bird{
@@ -178,7 +178,8 @@ nav img:active{
 }
 .box:hover .bird{
     animation-play-state: running!important;
-    transform: translateX(-70vw)translateY(-45vh);
+    transform: translateX(-76vw)translateY(-42vh);
+    transition: 1s;
 }
 @keyframes gifAnimation {
     from{
@@ -190,29 +191,30 @@ nav img:active{
 }
 .slider .content div:nth-child(1){
     text-align: left;
-    color: #eff6e0;
-    text-shadow: 2px 2px 10px  #eff6e0;
+    font-weight: bolder;
+    color: var(--colorOne);
+    text-shadow: 1px 1px 10px  var(--colorOne);
     text-transform: uppercase;
     transform: translate(5px, 5px);
     
 }
 .slider .content button{ 
     background: transparent;
-    color: #eff6e0;
+    color: var(--colorOne);
     font-family: 'Poppins';
-    box-shadow: 2px 2px 5px #eff6e0;
-    text-shadow: 1px 1px 4px #eff6e0;
+    box-shadow: 1px 1px 10px var(--colorOne);
+    text-shadow: 1px 1px 4px var(--colorOne);
     letter-spacing: 5px;
     border-radius: 20px;
     padding: 8px 15px;
     font-size: medium;
-    border: 2px solid #eff6e0;
+    border: 1px solid var(--colorOne);
     cursor: pointer; 
 }
 .content a :hover {
-    border: 2px solid #eff6e0;
+    border: 1px solid var(--colorOne);
     transform: translate(-3px, -3px);
-    box-shadow: 5px 5px 10px #eff6e0;
+    box-shadow: 1px 1px 10px var(--colorOne);
     transition: transform 0.1s, border 0.1s;
 }
 .content a:active {
@@ -226,10 +228,10 @@ nav img:active{
     height: 50px;
     border-radius: 50%;
     background-color: transparent;
-    border: 2px solid #eff6e0;
-    background-color: rgba(238, 238, 238, 0.333);
-    box-shadow: 2px 2px 10px #eff6e0;
-    color: #eff6e0;
+    border: 1px solid var(--colorOne);
+    background-image: linear-gradient(to top, var(--colorOne), var(--colorTwo));
+    box-shadow: 1px 1px 10px var(--colorOne);
+    color: var(--colorOne);
     font-size: x-large;
     font-family: monospace;
     cursor: pointer;
@@ -243,10 +245,10 @@ nav img:active{
     right: 20px;
 }
 #prev, #next:hover{
-    border: 2px solid #eff6e0;
-    box-shadow: 1px 1px 5px #eff6e08a;
+    border: 1px solid var(--colorOne);
+    box-shadow: 1px 1px 10px var(--colorOne);
     transition: transform 0.1s, border 0.1s;
-    transform: translate(-1px, -1px);
+    transform: translate(-10px, -10px);
 }
 /* //circle */
 
@@ -261,7 +263,7 @@ nav img:active{
     mask: radial-gradient(var(--radius), #0000 98%, #000);
     backdrop-filter: blur(10px);
     background: radial-gradient( 
-        calc(var(--radius) + 1px), #eff6e0 100%, #eee2
+        calc(var(--radius) + 1px), var(--colorOne) 100%, #eee2
     );
 }
 .circle span{
@@ -272,7 +274,7 @@ nav img:active{
     left: 50%;
     --rotate: 50deg;
     text-transform: uppercase;
-    color: #eff6e0;
+    color: var(--colorOne);
     font-size: small;
     animation: circleRotate 20s linear infinite;
     transform: translate(-50%, -50%) rotate(var(--rotate));
