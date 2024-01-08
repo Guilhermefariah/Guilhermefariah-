@@ -15,11 +15,11 @@
         width: 90%;
     }
     .box {
-        width: 50px;
-        height: 50px;
+        width: 5vw;
+        height: 5vh;
         margin: 62vh 75vw;
     }
     .box:hover .bird {
-        transform: translateX(-68vw)translateY(-38vh);
+        transform: translateX(-50vh)translateY(-10vh);
     }
 }
