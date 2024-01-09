@@ -1,6 +1,6 @@
 main {
     background:  linear-gradient(var(--colorTwo)80%, var(--colorOne));
-    height: 200vh;
+    height: 400vh;
   }
 ::-webkit-scrollbar {
     background-color: var(--colorTwo);
@@ -13,4 +13,51 @@ main {
 }
 ::-webkit-scrollbar-thumb:hover {
     background-image: linear-gradient(var(--colorTwo), var(--colorOne));
+}
+.sliderNew{
+    position: relative;
+    width: 30vw;
+    border: 1px solid var(--colorOne);
+    box-shadow: 1px 1px 10px var(--colorOne);
+    border-radius: 5px;
+    display: inline-block;
+    margin: auto 5vw auto 0px;
+    transform: translate(50%, -10%);
+    
+}
+.image {
+    display: block;
+    width:  30vw;
+    height: 60vh;
+}
+.over {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 30vw;
+    height: 0;
+    transition-duration: 2s;
+    background: linear-gradient(to right, var(--colorOne), var(--colorTwo));
+    font-size: 1.5em;
+    color: var(--colorOne);
+    
+}
+.sliderNew:hover .over {
+    color: var(--colorOne);
+    bottom: 0;
+    height: 100%;
+    transition-duration: 2s;
+}
+.text {
+    transition: 2s;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(50%, 50%);
+    transform: translate(0vw, 25vh);
+    text-align: center;
+    color: var(--colorOne);
+    font-weight: bolder;
+    font-size: 1.2em;
+    text-shadow: var(--colorOne);
 }

@@ -5,7 +5,8 @@
 .iframeTable {
     overflow: hidden;
     margin: auto;
-    width: 70vw;
+    margin-bottom: 30vh;
+    width: 80vw;
     height: 50vh;
     display: block;
     border: 1px solid var(--colorOne);
