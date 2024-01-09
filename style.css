@@ -1,15 +1,17 @@
 :root{
-    --width-circle: 150vw;
+    --width-circle: 100vw;
     --radius: calc(100vw / 6);
 
     --colorOne: #ffffff;
     --colorTwo: #011936;
 }
-body{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+}
+body{
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--colorTwo);
+    
 }
 audio{
     display: none;
@@ -22,6 +24,7 @@ header{
     align-items: center;
     box-sizing: border-box;
     z-index: 10;
+    background-image: linear-gradient(-10deg, var(--colorTwo), var(--colorOne)20%, var(--colorTwo));
 }
 nav img { 
     width: 35px;
@@ -51,20 +54,18 @@ nav img:active{
     inherits: false;
 }
 .slider{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 92vh;
     overflow: hidden; 
-    position: fixed;
-    top: 0;
-    background-size: cover;
     background-image: conic-gradient(
-        from var(--rotate) at 7% 5%,
+        from var(--rotate) at 7% 0%,
         var(--colorTwo) 40%,
         var(--colorOne),
         var(--colorTwo) 60%
     );
     color: transparent;
     animation: rotateLight 3s ease-in-out infinite alternate;
+    margin-bottom: 10vh;
 }
 @keyframes rotateLight{
     from{
@@ -72,10 +73,8 @@ nav img:active{
     }to{
         --rotate: -0.15turn;
     }
-
 }
 .slider .list{
-    position: absolute;
     width: max-content;
     height: 100%;
     display: flex;
@@ -85,6 +84,7 @@ nav img:active{
 .slider .list .item{
     width: calc(var(--radius) * 2);
     text-align: center;
+    padding-bottom: 10vh;
     transition: transform 1s;
     transform: rotate(45deg);
 }
@@ -97,16 +97,15 @@ nav img:active{
 }
 .slider .content{
     position: absolute;
-    margin: auto;
+    margin: 0;
     bottom: 1.5vh;
     left: 50%;
     text-align: center;
     width: max-content;
     transform: translateX(-50%);
 }
-.slider .content div:nth-child(2){
+.slider .content article:nth-child(2){
     background-clip: text;
-    -webkit-background-clip: text;
     text-transform: uppercase;
     animation: sliderLight 5s ease-in-out infinite alternate;
     letter-spacing: 2vw;
@@ -129,8 +128,7 @@ nav img:active{
         --rotate: -5turn;
     }
 }
-
-.slider .content div:nth-child(2)::before{
+.slider .content article:nth-child(2)::before{
     position: absolute;
     right: 10vw;
     bottom: 5vh;
@@ -141,62 +139,13 @@ nav img:active{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.box{
-    position: fixed;
-    width: 30px;
-    height: 30px;
-    right: 15vw;
-    bottom: 25vh;
-    cursor: pointer; 
-}
-.bg{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(var(--colorOne), var(--colorTwo));
-    background-size: cover;
-    border-radius: 50px;
-    transition: 1s;
-}
-.box:hover .bg{
-    transform: 
-        perspective(20px)
-        rotatex(0deg)
-        translateY(-20px);
-}
-.bird{
-    pointer-events: none;
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    background-size: 100%;
-    animation: gifAnimation 0.3s linear infinite;
-    background-repeat: no-repeat;
-    bottom: 0;
-    transition: 1s;
-    animation-play-state: paused!important;
-}
-.box:hover .bird{
-    animation-play-state: running!important;
-    transform: translateX(-78vw)translateY(-44vh);
-    transition: 1s;
-}
-@keyframes gifAnimation {
-    from{
-        background-image: url(img/5.png);  
-    }to{
-        background-image: url(img/6.png);
-    }
-    
-}
-.slider .content div:nth-child(1){
+.slider .content article:nth-child(1){
     text-align: left;
     font-weight: bolder;
     color: var(--colorOne);
     text-shadow: 1px 1px 10px  var(--colorOne);
     text-transform: uppercase;
-    transform: translate(5px, 5px);
-    
+    transform: translate(5px, 5px); 
 }
 .slider .content button{ 
     background: transparent;
@@ -250,8 +199,54 @@ nav img:active{
     transition: transform 0.1s, border 0.1s;
     transform: translate(-10px, -10px);
 }
+.box{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 15vw;
+    bottom: 25vh;
+    cursor: pointer; 
+}
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(var(--colorOne), var(--colorTwo));
+    background-size: cover;
+    border-radius: 50px;
+    transition: 1s;
+}
+.box:hover .bg{
+    transform: 
+        perspective(20px)
+        rotatex(0deg)
+        translateY(-20px);
+}
+.bird{
+    pointer-events: none;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-size: 100%;
+    animation: gifAnimation 0.3s linear infinite;
+    background-repeat: no-repeat;
+    bottom: 0;
+    transition: 1s;
+    animation-play-state: paused!important;
+}
+.box:hover .bird{
+    animation-play-state: running!important;
+    transform: translateX(-74vw)translateY(-53vh);
+    transition: 1s;
+}
+@keyframes gifAnimation {
+    from{
+        background-image: url(img/5.png);  
+    }to{
+        background-image: url(img/6.png);
+    }   
+}
 /* //circle */
-
 .circle{
     pointer-events: none;
     position: absolute;
@@ -262,7 +257,7 @@ nav img:active{
     height: 100%;
     -webkit-mask: radial-gradient(var(--radius), transparent 100%, #000);
     mask: radial-gradient(var(--radius), #0000 98%, #000);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     background: radial-gradient( 
         calc(var(--radius) + 1px), var(--colorOne) 100%, #eee2
     );
@@ -285,5 +280,4 @@ nav img:active{
         transform: translate(-50%, -50%) rotate(calc(var(--rotate) + 360deg));
     }
 }
-
 
