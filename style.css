@@ -236,7 +236,7 @@ nav img:active{
 }
 .box:hover .bird{
     animation-play-state: running!important;
-    transform: translateX(-74vw)translateY(-53vh);
+    transform: translateX(-72vw)translateY(-52vh);
     transition: 1s;
 }
 @keyframes gifAnimation {
