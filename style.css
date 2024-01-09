@@ -65,7 +65,7 @@ nav img:active{
     );
     color: transparent;
     animation: rotateLight 3s ease-in-out infinite alternate;
-    margin-bottom: 30vh;
+    margin-bottom: 20vh;
 }
 @keyframes rotateLight{
     from{
@@ -257,7 +257,7 @@ nav img:active{
     height: 100%;
     -webkit-mask: radial-gradient(var(--radius), transparent 100%, #000);
     mask: radial-gradient(var(--radius), #0000 98%, #000);
-    backdrop-filter: blur(0px);
+    backdrop-filter: blur(0.5px);
     background: radial-gradient( 
         calc(var(--radius) + 1px), var(--colorOne) 100%, #eee2
     );

@@ -1,6 +1,6 @@
 main {
-    background:  linear-gradient(var(--colorTwo)80%, var(--colorOne));
-    height: 400vh;
+    background:  linear-gradient(var(--colorTwo)70%, var(--colorOne));
+    height: 300vh;
   }
 ::-webkit-scrollbar {
     background-color: var(--colorTwo);
@@ -28,7 +28,7 @@ main {
 .image {
     display: block;
     width:  30vw;
-    height: 60vh;
+    height: 40vh;
 }
 .over {
     position: absolute;
@@ -39,7 +39,7 @@ main {
     width: 30vw;
     height: 0;
     transition-duration: 2s;
-    background: linear-gradient(to right, var(--colorOne), var(--colorTwo));
+    background: linear-gradient(to bottom, var(--colorOne), var(--colorTwo));
     font-size: 1.5em;
     color: var(--colorOne);
     
