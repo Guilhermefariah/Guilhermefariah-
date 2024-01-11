@@ -71,7 +71,7 @@ main {
     border: none;
     opacity: 0.8;
     bottom: 15vh;
-    right: 12vw;
+    right: 14vw;
     color: var(--colorOne);  
 }
 .chatOpen {
