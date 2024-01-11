@@ -39,7 +39,7 @@
                     <article class="item">
                         <a href=""><img src="img/2.jpg"></a>
                     </article>   
-                </article>
+                </article>             
                 <audio preload="metadata" controls="controls" autoplay loop>
                     <source src="img/Woodpecker Eating Distant.mp3" type="audio/mp3">
                 </audio>
@@ -50,7 +50,6 @@
                     <div class="bg"></div>
                     <div class="bird"></div>
                 </article>
-
                 <article class="content">
                     <article>My</article>
                     <article>Projects</article>
@@ -75,9 +74,23 @@
                 <article class="over">
                     <article class="text">CSS</article>
                 </article>
+            </article>     
+
+            <button class="chatButton" onclick="openForm()">
+                &#9990;
+            </button>
+            <article class="chatOpen" id="newForm">
+                <form action="#" class="frontOpen">
+                    <h1>Chat &#9835;</h1>
+                    <label for="msg"><b>&#10084;</b></label>
+                    <textarea  placeholder="Deixe sua menssagem..." 
+                    id="textMsg" name="msg" cols="30" rows="10"></textarea>
+                    <button type="submit" class="send" >Enviar</button>
+                    <button type="submit" class="cancel" onclick="closeForm()">Fechar</button>
+                </form>
             </article>
-            
     </main>
+        <script src="main/main.js"></script>
         <script src="app.js" ></script>
     </body>
     </html>

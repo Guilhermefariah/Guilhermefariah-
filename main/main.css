@@ -61,3 +61,67 @@ main {
     font-size: 1.2em;
     text-shadow: var(--colorOne);
 }
+
+.chatButton {
+    width: 0;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 4em;
+    position: fixed;
+    border: none;
+    opacity: 0.8;
+    bottom: 15vh;
+    right: 8vw;
+    color: var(--colorOne);  
+}
+.chatOpen {
+    display: none;
+    position: fixed;
+    bottom: 1vh;
+    right: 1vw;
+    z-index: 9;  
+    border: 1px solid  var(--colorOne);
+    box-shadow: 1px 1px 10px var(--colorOne);  
+    border-radius: 20px;
+}
+.frontOpen {
+    max-width: 30vw;
+    padding: 30px;
+    background-color: var(--colorTwo);
+    border-radius: 20px;
+}
+b {
+    color: var(--colorOne);
+}
+.frontOpen textarea {
+    width: 20vw;
+    padding: 15%;
+    margin: 5px 0px 22px 10px;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--colorOne);
+    resize: none;
+    min-height: 30vh;
+    font-weight: bold;
+    font-size: 1.1em;   
+}
+.frontOpen textarea:focus {
+    background-color: var(--colorOne);
+    outline: none;
+    color: var(--colorTwo);
+}
+.frontOpen .send, .cancel {
+    background-color: var(--colorOne);
+    border-radius: 5px;
+    color: var(--colorTwo);
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.frontOpen .send:hover, .cancel:hover,  .chatButton:hover {
+    opacity: 1;
+}
