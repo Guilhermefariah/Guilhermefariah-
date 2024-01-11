@@ -1,5 +1,9 @@
+:root{
+    --colorOne: #ffffff;
+    --colorTwo: #011936;
+}
 main {
-    background:  linear-gradient(var(--colorTwo)70%, var(--colorOne));
+    background-color: var(--colorTwo);
     height: 300vh;
   }
 ::-webkit-scrollbar {

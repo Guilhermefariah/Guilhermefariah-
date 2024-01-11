@@ -1,3 +1,18 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "emmet.triggerExpansionOnTab": false,
+    "emmet.optimizeStylesheetParsing": true,
+    "emmet.showAbbreviationSuggestions": true,
+    "editor.scrollbar.ignoreHorizontalScrollbarInContentHeight": false,
+    "editor.comments.ignoreEmptyLines": true,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "editor.screenReaderAnnounceInlineSuggestion": true,
+    "zenMode.silentNotifications": true,
+    "extensions.ignoreRecommendations": false,
+    "terminal.integrated.ignoreBracketedPasteMode": false,
+    "notebook.breadcrumbs.showCodeCells": true,
+    "notebook.compactView": true,
+    "notebook.diff.enablePreview": true,
+    "javascript.inlayHints.variableTypes.enabled": false,
+    "breadcrumbs.showVariables": true
 }

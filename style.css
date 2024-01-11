@@ -1,7 +1,6 @@
 :root{
     --width-circle: 100vw;
     --radius: calc(100vw / 6);
-
     --colorOne: #ffffff;
     --colorTwo: #011936;
 }
@@ -12,7 +11,6 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 audio{
     display: none;
@@ -25,7 +23,6 @@ header{
     align-items: center;
     box-sizing: border-box;
     z-index: 10;
-    background-image: linear-gradient(to bottom, var(--colorOne), var(--colorTwo));
 }
 nav img { 
     width: 35px;
@@ -258,9 +255,9 @@ nav img:active{
     height: 100%;
     -webkit-mask: radial-gradient(var(--radius), transparent 100%, #000);
     mask: radial-gradient(var(--radius), #0000 98%, #000);
-    backdrop-filter: blur(0.5px);
+    backdrop-filter: blur(10px);
     background: radial-gradient( 
-        calc(var(--radius) + 1px), var(--colorOne) 100%, #eee2
+        calc(var(--radius) + 2px), var(--colorOne) 100%, #eee2
     );
 }
 .circle span{
