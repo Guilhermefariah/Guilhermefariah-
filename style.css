@@ -185,7 +185,7 @@ nav img:active{
     font-size: x-large;
     font-family: monospace;
     cursor: pointer;
-    z-index: 15;
+    z-index: 8;
     transform: translateY(-50%);
 }
 #prev{
