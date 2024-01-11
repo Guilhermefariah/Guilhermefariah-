@@ -3,19 +3,22 @@
     --colorTwo: #011936;
 }
 .iframeTable {
-    overflow: hidden;
+    overflow-y: hidden;
     margin: auto;
     margin-bottom: 20vh;
     width: 80vw;
-    height: 50vh;
+    height: 60vh;
     display: block;
     border: 1px solid var(--colorOne);
+    border-radius: 10px;
     box-shadow: inset 1px 1px 10px var(--colorOne);
 }
 
 table {
-    width: 80vw;
-    height: 40vh;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
     text-align: center;
     border-spacing: 0.5vw;
 }
