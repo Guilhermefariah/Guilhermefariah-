@@ -1,6 +1,6 @@
 function openForm() {
-    document.getElementById("openForm").style.display = "block";
+    document.querySelector(".openForm").style.display = "block";
 }
 function closeForm() {
-    document.getElementById("openForm").style.display = "none";
+    document.querySelector(".openForm").style.display = "none";
 }
