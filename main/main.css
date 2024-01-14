@@ -27,7 +27,6 @@ main {
     display: inline-block;
     margin: auto 5vw auto 0px;
     transform: translate(50%, -10%);
-    
 }
 .image {
     display: block;
@@ -53,16 +52,17 @@ main {
     bottom: 0;
     height: 100%;
     transition-duration: 2s;
+    border-radius: 5px;
 }
 .text {
-    transition: 2s;
+    transition: 5s;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(50%, 50%);
-    transform: translate(0vw, 25vh);
+    transform: translate(0vw, 20vh);
     text-align: center;
     color: var(--colorOne);
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-shadow: var(--colorOne);
 }
 .chatButton {
@@ -77,7 +77,7 @@ main {
     right: 18vw;
     color: var(--colorOne);  
 }
-.chatOpen {
+.openForm {
     display: none;
     position: fixed;
     bottom: 1vh;
