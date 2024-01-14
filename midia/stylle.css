@@ -10,8 +10,8 @@
         width: 30vw;
     }
     .box {
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
     }
     .box:hover .bird{
         transform: translateX(-54vw)translateY(-56vh);
