@@ -72,24 +72,24 @@ nav img:active{
         --rotate: -0.15turn;
     }
 }
-.runSlider .list{
+.runSlider .newList{
     width: max-content;
     height: 100%;
     display: flex;
     align-items: center;
     transition: transform 0.8s; 
 }
-.runSlider .list .item{
+.runSlider .newList .item{
     width: calc(var(--radius) * 2);
     text-align: center;
     padding-bottom: 10vh;
     transition: transform 1s;
     transform: rotate(45deg);
 }
-.runSlider .list .item.active{
+.runSlider .newList .item.active{
     transform: rotate(0deg);
 }
-.runSlider .list .item img{
+.runSlider .newList .item img{
     width: 80%;
     filter: drop-shadow(0 0 20px var(--colorTwo));
 }

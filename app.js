@@ -1,8 +1,8 @@
 let circle = document.querySelector('.circle');
-let list = document.querySelector('.list');
+let newList = document.querySelector('.newList');
 let prev = document.getElementById('prev');
 let next = document.getElementById('next');
-let items = document.querySelectorAll('.list .item');
+let items = document.querySelectorAll('.newList .item');
 let count = items.length;
 let active = 0;
 let leftTransform = 0;
@@ -25,7 +25,7 @@ function runCarousel() {
     items[active].classList.add('active');
    
     leftTransform = width_item * (active - 1) * - 1;
-    list.style.transform = `translateX(${leftTransform}px)`;
+    newList.style.transform = `translateX(${leftTransform}px)`;
 }
 runCarousel();
 
