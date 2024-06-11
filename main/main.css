@@ -44,8 +44,7 @@ main {
     transition-duration: 2s;
     background: linear-gradient(to bottom, var(--colorOne), var(--colorTwo));
     font-size: 1.5em;
-    color: var(--colorOne);
-    
+    color: var(--colorOne); 
 }
 .sliderNew:hover .over {
     color: var(--colorOne);
@@ -86,6 +85,7 @@ main {
     border: 1px solid  var(--colorOne);
     box-shadow: 1px 1px 10px var(--colorOne);  
     border-radius: 20px;
+    opacity: 0.9;
 }
 b {
     color: var(--colorOne);
